@@ -225,8 +225,8 @@ const Home = () => {
         {navState === 6 && <InviteeAddContactForm />}
 
         {navState === 7 && (
-          <Contacts 
-            setNavState={setNavState} setViewContacts={setViewContacts}viewContacts={viewContacts}
+        <Contacts 
+          setNavState={setNavState} setViewContacts={setViewContacts}viewContacts={viewContacts}
           /> 
         )}
 
@@ -251,7 +251,7 @@ export default Home;
 const Div = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-end;
+
   @media (max-width: 768px) {
     justify-content: center;
   }
