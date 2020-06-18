@@ -216,11 +216,11 @@ const Groups = () => {
                       </ContactDiv>
                       )
                     })}
-                   {width < 768 && ( <BtnContainer>
+                  <BtnContainer>
                       <img onClick={()=>{setIsAddingContactToGroup(true)}} src={circleBtn} style={{width: '50px', height: '50px'}}></img>
                       <EditBtn onClick={()=>{setNavState(8)}}>Edit</EditBtn>
                       <DeleteBtn onClick={() => handleDelete(group.id, adminInfo.adminId, token)}>Delete</DeleteBtn>
-                    </BtnContainer>)}
+                    </BtnContainer>
                   </ContactList>
                 )}
               </Group>
